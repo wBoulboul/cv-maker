@@ -9,4 +9,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - run: echo "hello world"
+
+      - name: show node version
+      - run: echo node -v
+
+      - name: instamm dependencies
+      - run: npm install
+
+      - name: build the app
+      - run: npm run build
