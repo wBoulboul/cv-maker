@@ -40,6 +40,6 @@ jobs:
 
       - name: test connection
         run: |
-          pnpm run preview
+          pnpm run preview &
           sleep 5 
           curl -I http://localhost:4173
