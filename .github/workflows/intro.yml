@@ -20,8 +20,8 @@ jobs:
           run_install: false
 
 
-      - name: instamm dependencies
-        run: npm install
+      - name: install dependencies
+        run: pnpm install
 
       - name: build the app
-        run: npm run build
+        run: pnpm run build
